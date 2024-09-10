@@ -1,0 +1,19 @@
+#!/bin/bash 
+  
+cd
+rm -rf ccminer
+git clone https://github.com/narob1234/ccminer_i
+cd ../etc/mobile-mining/set-miner
+cp -r online.json offline.json /../root/ccminer_i/mobile-mining/set-miner
+cd
+cd ../etc
+rm -rf mobile-mining 
+cd
+cd ../bin
+rm -rf add-ip edit-miner run-miner backup restore up-grade
+cd
+cd ccminer
+chmod +x setupdate.sh
+sh setupdate.sh
+e.sh
+sh setupdate.sh
