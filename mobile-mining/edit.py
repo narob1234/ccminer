@@ -43,11 +43,11 @@ def OffMiner():
    with open("set-miner/online.json", "w") as set:
         json.dump(push, set, indent=4)
 
-        print("ชื่อคนงานขุด เช่น \033[93mMiner01\033[00m")
+        print("Worker Name | ชื่อคนงานขุด เช่น \033[93mMiner01\033[00m")
         name = input("[-n]: ")
         print("\033[35m-----------------------------------------\033[0m")
         
-        print(f"จำนวนthread \033[93mค่าที่ใส่ได้คือ 0 ถึง {cpu_thread}\033[00m")
+        print(f"Using Thread | จำนวน Thread \033[93mค่าที่ใส่ได้คือ 0 ถึง {cpu_thread}\033[00m")
         cpu = int(input("[-t]: "))
         print("\033[35m-----------------------------------------\033[0m")
         
@@ -68,3 +68,4 @@ while True:
   OffMiner()
   os.system("run-miner")     
   break
+
