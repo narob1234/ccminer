@@ -841,9 +841,9 @@ static bool work_decode(const json_t *val, struct work *work)
 	return true;
 }
 
-#define YES "tyes!"
-#define YAY "yay!!!"
-#define BOO "booooo, noob"
+#define YES "Pass!"
+#define YAY "Jackpot!!!"
+#define BOO "Booooo, Noob"
 
 int share_result(int result, int pooln, double sharediff, const char *reason)
 {
@@ -870,7 +870,7 @@ int share_result(int result, int pooln, double sharediff, const char *reason)
 
 	format_hashrate(hashrate, s);
 	if (opt_showdiff)
-		sprintf(suppl, "diff %.3f", sharediff);
+		sprintf(suppl, "Diff %.3f", sharediff);
 	else // accepted percent
 		sprintf(suppl, "%.2f%%", 100. * p->accepted_count / (p->accepted_count + p->rejected_count));
 
@@ -891,7 +891,7 @@ int share_result(int result, int pooln, double sharediff, const char *reason)
 			p->rejected_count,
 			suppl, s, flag, solved);
 	if (reason) {
-		applog(LOG_WARNING, "reject reason: %s", reason);
+		applog(LOG_WARNING, "Reject Reason: %s", reason);
 		if (!check_dups && strncasecmp(reason, "duplicate", 9) == 0) {
 			applog(LOG_WARNING, "enabling duplicates check feature");
 			check_dups = true;
