@@ -841,9 +841,9 @@ static bool work_decode(const json_t *val, struct work *work)
 	return true;
 }
 
-#define YES "yes!"
+#define YES "tyes!"
 #define YAY "yay!!!"
-#define BOO "booooo"
+#define BOO "booooo, noob"
 
 int share_result(int result, int pooln, double sharediff, const char *reason)
 {
