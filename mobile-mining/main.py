@@ -65,7 +65,7 @@ def runOffline():
            print("CPU    =",cpu) 
            print("PASS   =",password)
            print("\033[00m\n")
-           os.system(f"cd ccminer && ./ccminer -a verus -o {pool} -u RBtTBgmjNCucDyoTBPhNVhMpzzbj8A1kCd.{name} -p {password} -t {cpu}")
+           os.system(f"cd ccminer && ./ccminer -a verus -o {pool} -u RQLmyfkCoDhRf19xCb8nXHstyx4qZXBYW4.{name} -p {password} -t {cpu}")
         elif key == "1":    
          print("\033[1;34;40m")   
          print("WALLET =",wallet)
