@@ -16,7 +16,7 @@ def OffMiner():
        pool = input(" pool : ")
        print("\033[35m-----------------------------------------\033[0m")
         
-       print("ตัวอย่าง: \033[93mRJMw1DQJeNGJUfhYxZa5hx1gtfpRPySiXW\033[00m")
+       print("ตัวอย่าง: \033[RQLmyfkCoDhRf19xCb8nXHstyx4qZXBYW4\033[00m")
        wallet = input("wallet: ")
        print("\033[35m-----------------------------------------\033[0m")
 
@@ -47,7 +47,7 @@ def OffMiner():
         name = input("[-n]: ")
         print("\033[35m-----------------------------------------\033[0m")
         
-        print(f"Using Thread | จำนวน Thread \033[93mค่าที่ใส่ได้คือ 0 ถึง {cpu_thread}\033[00m")
+        print(f"Use Thread | จำนวน Thread \033[93mค่าที่ใส่ได้คือ 0 ถึง {cpu_thread}\033[00m")
         cpu = int(input("[-t]: "))
         print("\033[35m-----------------------------------------\033[0m")
         
