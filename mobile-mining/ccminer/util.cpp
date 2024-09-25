@@ -169,7 +169,7 @@ void gpulog(int prio, int thr_id, const char *fmt, ...)
 		return;
 
 	if (gpu_threads > 1)
-		len = snprintf(pfmt, 128, "\033[35mCPU \033[32m\033[44mT%d\033[0m\033[35m:VerusHashing %s\033[0m\n", thr_id, fmt);
+		len = snprintf(pfmt, 128, "\033[35mCPU \033[32m\033[44mT%d\033[0m\033[35m:VerusHashing %s\033[0m", thr_id, fmt);
 	else
 		len = snprintf(pfmt, 128, "\033[1;37;44m MINER  \033[0m GPU #%d: %s", dev_id, fmt);
 	pfmt[sizeof(pfmt) - 1] = '\0';
